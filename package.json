@@ -1,0 +1,33 @@
+{
+  "name": "user-roles-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:frontend dev:backend",
+    "dev:frontend": "next dev --turbo",
+    "dev:backend": "convex dev --typecheck=disable",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.0.41",
+    "@clerk/nextjs": "^5.5.5",
+    "convex": "^1.16.0",
+    "next": "14.2.11",
+    "npm-run-all": "^4.1.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "svix": "^1.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
